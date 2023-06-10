@@ -1,6 +1,4 @@
-# openehr-am-java
-
-[![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
+# openehr-am-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
 This repository contains the Java interface types for the openEHR [AM specifications](https://specifications.openehr.org/releases/AM).
 
@@ -20,7 +18,7 @@ How to create such an access token is described here: [docs.github.com](https://
 <dependency>
   <groupId>com.experimental-software.java-api</groupId>
   <artifactId>openehr-am-aom2</artifactId>
-  <version>2.2.0-alpha-1</version>
+  <version>2.2.0-alpha-3</version>
 </dependency>
 ```
 
@@ -51,7 +49,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.experimental-software.java-api:openehr-am-aom2:2.2.0-alpha-1'
+    api 'com.experimental-software.java-api:openehr-am-aom2:2.2.0-alpha-3'
 }
 ```
 
