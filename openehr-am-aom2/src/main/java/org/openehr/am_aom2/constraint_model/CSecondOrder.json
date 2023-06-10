@@ -1,0 +1,45 @@
+{
+    "attributes": [
+        {
+            "description": "Members of this second order constrainer. Normally redefined in descendants.",
+            "multiplicity": "0..1",
+            "name": "members",
+            "type": "List"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if constraints represented by this node, ignoring any sub-parts, are narrower or the same as other. Typically used during validation of specialised archetype nodes.",
+            "name": "c_conforms_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                },
+                {
+                    "name": "rmcc",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if constraints represented by this node contain no further redefinitions with respect to the node other. Typically used to test if an inherited node locally contains any constraints.",
+            "name": "c_congruent_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": null,
+        "classifier": "Class",
+        "description": "Abstract parent of classes defining second order constraints.",
+        "name": "C_SECOND_ORDER"
+    }
+}

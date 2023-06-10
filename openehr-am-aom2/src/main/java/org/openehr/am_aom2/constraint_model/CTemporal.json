@@ -1,0 +1,75 @@
+{
+    "attributes": [
+        {
+            "description": "Optional alternative constraint in the form of a pattern based on ISO8601. See descendants for details.",
+            "multiplicity": "0..1",
+            "name": "pattern_constraint",
+            "type": "String"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if `_a_pattern_` is a valid constraint. Define in concrete descendants.",
+            "name": "valid_pattern_constraint",
+            "parameters": [
+                {
+                    "name": "a_pattern",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Return True if `_a_pattern_` can be replaced by `_an_other_pattern_` in a specialised constraint. Define in concrete subtypes.",
+            "name": "valid_pattern_constraint_replacement",
+            "parameters": [
+                {
+                    "name": "a_pattern",
+                    "type": "Object"
+                },
+                {
+                    "name": "an_other_pattern",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if any value (i.e. instance) of the reference model type would be allowed. Redefined in descendants.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `precursor()` or else `_other.pattern_constraint_` is empty, or else `_pattern_constraint_` is a valid (narrower) replacement for `_other.pattern_constraint_`.",
+            "name": "c_value_conforms_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `precursor (other)` and `_pattern_constraint_ ~ _other.pattern_constraint_`, i.e. either both `Void` or else both non-`Void` and identical.",
+            "name": "c_value_congruent_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_ORDERED"
+        ],
+        "classifier": "Class",
+        "description": "Purpose Abstract parent of `C_ORDERED` types whose base type is an ISO date/time type.",
+        "name": "C_TEMPORAL"
+    }
+}

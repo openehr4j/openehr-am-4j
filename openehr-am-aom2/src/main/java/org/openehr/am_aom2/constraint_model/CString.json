@@ -1,0 +1,78 @@
+{
+    "attributes": [
+        {
+            "description": "String constraint - a list of literal strings and / or regular expression strings delimited by the \u2018/\u2019 character.",
+            "multiplicity": null,
+            "name": "constraint",
+            "type": "List"
+        },
+        {
+            "description": "Default String value.",
+            "multiplicity": null,
+            "name": "default_value",
+            "type": "String"
+        },
+        {
+            "description": "Assumed String value.",
+            "multiplicity": null,
+            "name": "assumed_value",
+            "type": "String"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "",
+            "name": "prototype_value",
+            "parameters": [],
+            "return_type": "String"
+        },
+        {
+            "meaning": "True if a_value is valid with respect to constraint expressed in concrete instance of this type.",
+            "name": "valid_value",
+            "parameters": [
+                {
+                    "name": "a_value",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `_constraint_` is empty or else contains one String for the regex 'any' pattern.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `_other.any_allowed_` or else every constraint in the `_constraint_` list exists in the `_other.constraint_`.",
+            "name": "c_value_conforms_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if the items in `_constraint_` are equal in number and identical pair-wise with those in `_other.constraint_`.",
+            "name": "c_value_congruent_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_PRIMITIVE_OBJECT"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on instances of `String`.",
+        "name": "C_STRING"
+    }
+}

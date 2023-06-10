@@ -1,0 +1,13 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "TERMINOLOGY_RELATION"
+        ],
+        "classifier": "Class",
+        "description": "Representation of a flat value set within the archetype terminology.",
+        "name": "VALUE_SET"
+    }
+}

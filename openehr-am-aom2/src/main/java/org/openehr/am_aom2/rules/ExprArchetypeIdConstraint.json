@@ -1,0 +1,20 @@
+{
+    "attributes": [
+        {
+            "description": "A C_STRING representing a regular expression for matching Archetype identifiers.",
+            "multiplicity": null,
+            "name": "item",
+            "type": "C_STRING"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "EXPR_CONSTRAINT"
+        ],
+        "classifier": "Class",
+        "description": "Expression tree leaf item representing a constraint on an archetype identifier.",
+        "name": "EXPR_ARCHETYPE_ID_CONSTRAINT"
+    }
+}

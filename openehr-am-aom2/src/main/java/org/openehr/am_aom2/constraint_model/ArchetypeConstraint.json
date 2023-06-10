@@ -1,0 +1,46 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if constraints represented by this node, ignoring any sub-parts, are narrower or the same as other.",
+            "name": "is_subset_of",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "",
+            "name": "is_valid",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Path of this node relative to root of archetype.",
+            "name": "path",
+            "parameters": [],
+            "return_type": "String"
+        },
+        {
+            "meaning": "True if the relative path a_path exists at this node.",
+            "name": "has_path",
+            "parameters": [
+                {
+                    "name": "a_path",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": null,
+        "classifier": "Class",
+        "description": "Archetype equivalent to LOCATABLE class in openEHR Common reference model. Defines common constraints for any inheritor of LOCATABLE in any reference model.",
+        "name": "ARCHETYPE_CONSTRAINT"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "attributes": [
+        {
+            "description": "True if the value True is allowed.",
+            "multiplicity": "1..1",
+            "name": "true_valid",
+            "type": "Boolean"
+        },
+        {
+            "description": "True if the value False is allowed.",
+            "multiplicity": "1..1",
+            "name": "false_valid",
+            "type": "Boolean"
+        },
+        {
+            "description": "The value to assume if this item is not included in data, due to being part of an optional structure.",
+            "multiplicity": "1..1",
+            "name": "assumed_value",
+            "type": "Boolean"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "C_PRIMITIVE"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on instances of Boolean. Both attributes cannot be set to False, since this would mean that the Boolean value being constrained cannot be True or False.",
+        "name": "C_BOOLEAN"
+    }
+}

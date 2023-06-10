@@ -1,0 +1,59 @@
+{
+    "attributes": [
+        {
+            "description": "List of constraints on attributes of the reference model type represented by this object.",
+            "multiplicity": "0..1",
+            "name": "attributes",
+            "type": "List"
+        },
+        {
+            "description": "List of attribute tuple constraints under this object constraint, if any.",
+            "multiplicity": "0..1",
+            "name": "attribute_tuples",
+            "type": "List"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if any value (i.e. instance) of the reference model type would be allowed. Redefined in descendants.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if constraints represented by this node, ignoring any sub-parts, are narrower or the same as other.",
+            "name": "c_conforms_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                },
+                {
+                    "name": "rmcc",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if constraints represented by this node contain no further redefinitions with respect to the node `_other_`, with the exception of `_node_id_` redefinition in `C_OBJECT` nodes.",
+            "name": "c_congruent_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_DEFINED_OBJECT"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on complex objects, i.e. any object that consists of other object constraints.",
+        "name": "C_COMPLEX_OBJECT"
+    }
+}

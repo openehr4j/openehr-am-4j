@@ -1,0 +1,45 @@
+{
+    "attributes": [
+        {
+            "description": "ADL version if archetype was read in from an ADL sharable archetype.",
+            "multiplicity": "0..1",
+            "name": "adl_version",
+            "type": "String"
+        },
+        {
+            "description": "Unique identifier of this archetype artefact instance. A new identifier is assigned every time the content is changed by a tool. Used by tools to distinguish different revisions and/or interim snapshots of the same artefact.",
+            "multiplicity": "1..1",
+            "name": "build_uid",
+            "type": "UUID"
+        },
+        {
+            "description": "Semver.org compatible release of the most recent reference model release on which the archetype in its current version is based. This does not imply conformance only to this release, since an archetype may be valid with respect to multiple releases of a reference model.",
+            "multiplicity": "1..1",
+            "name": "rm_release",
+            "type": "String"
+        },
+        {
+            "description": "If True, indicates that this artefact was machine-generated from some other source, in which case, tools would expect to overwrite this artefact on a new generation. Editing tools should set this value to False when a user starts to manually edit an archetype.",
+            "multiplicity": "1..1",
+            "name": "is_generated",
+            "type": "Boolean"
+        },
+        {
+            "description": "",
+            "multiplicity": "1..1",
+            "name": "other_meta_data",
+            "type": "Hash"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "ARCHETYPE",
+            "AUTHORED_RESOURCE"
+        ],
+        "classifier": "Class",
+        "description": "Root object of a standalone, authored archetype, including all meta-data, description, other identifiers and lifecycle.",
+        "name": "AUTHORED_ARCHETYPE"
+    }
+}

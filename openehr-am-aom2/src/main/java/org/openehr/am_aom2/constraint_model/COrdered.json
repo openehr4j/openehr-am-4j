@@ -1,0 +1,61 @@
+{
+    "attributes": [
+        {
+            "description": "Constraint in the form of a List of Intervals of the parameter type T. Concrete types generated in descendants via template binding.",
+            "multiplicity": null,
+            "name": "constraint",
+            "type": "List"
+        },
+        {
+            "description": "Default value set in a template, and present in an operational template. Generally limited to leaf and near-leaf nodes.",
+            "multiplicity": null,
+            "name": "default_value",
+            "type": "T"
+        },
+        {
+            "description": "Value to be assumed if none sent in data.",
+            "multiplicity": null,
+            "name": "assumed_value",
+            "type": "T"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if any value (i.e. instance) of the reference model type would be allowed. Redefined in descendants.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `_other.any_allowed_` or else for every constraint in the `_constraint_` list there is a constraint in `_other.constraint_` that contains it.",
+            "name": "c_value_conforms_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if the items in `_constraint_` are equal in number and identical pair-wise with those in `_other.constraint_`.",
+            "name": "c_value_congruent_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_PRIMITIVE_OBJECT"
+        ],
+        "classifier": "Class",
+        "description": "Abstract parent of primitive constrainer classes based on `Ordered` base types, i.e. types like `Integer`, `Real`, and the Date/Time types. The model constraint is a List of Intervals, which may include point Intervals, and acts as a efficient and formally tractable representation of any number of point values and/or contiguous intervals of an ordered value domain.",
+        "name": "C_ORDERED"
+    }
+}

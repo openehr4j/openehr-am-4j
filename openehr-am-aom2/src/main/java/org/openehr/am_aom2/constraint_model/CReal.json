@@ -1,0 +1,32 @@
+{
+    "attributes": [
+        {
+            "description": "Set of Reals specifying constraint.",
+            "multiplicity": "0..1",
+            "name": "list",
+            "type": "List"
+        },
+        {
+            "description": "Range of Real specifying constraint.",
+            "multiplicity": "0..1",
+            "name": "range",
+            "type": "Interval<Real>"
+        },
+        {
+            "description": "The value to assume if this item is not included in data, due to being part of an optional structure.",
+            "multiplicity": "0..1",
+            "name": "assumed_value",
+            "type": "Real"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "C_PRIMITIVE"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on instances of Real.",
+        "name": "C_REAL"
+    }
+}

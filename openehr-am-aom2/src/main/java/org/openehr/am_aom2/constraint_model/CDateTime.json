@@ -1,0 +1,95 @@
+{
+    "attributes": [
+        {
+            "description": "Formal constraint on the assumed primitive `Iso8601_date_time` type, in the form of one or more `Interval<Iso8601_date_time>`.",
+            "multiplicity": null,
+            "name": "constraint",
+            "type": "List"
+        },
+        {
+            "description": "Default value set in a template, and present in an operational template. Generally limited to leaf and near-leaf nodes.",
+            "multiplicity": null,
+            "name": "default_value",
+            "type": "Iso8601_date_time"
+        },
+        {
+            "description": "Value to be assumed if none sent in data.",
+            "multiplicity": null,
+            "name": "assumed_value",
+            "type": "Iso8601_date_time"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "Return `valid_iso8601_date_time_constraint_pattern (a_pattern)`",
+            "name": "valid_pattern_constraint",
+            "parameters": [
+                {
+                    "name": "a_pattern",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Return `valid_date_time_constraint_replacements.has(an_other_pattern.as_upper) and then",
+            "name": "valid_pattern_constraint_replacement",
+            "parameters": [
+                {
+                    "name": "a_pattern",
+                    "type": "Object"
+                },
+                {
+                    "name": "an_other_pattern",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Validity of month in constrained date.",
+            "name": "month_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        },
+        {
+            "meaning": "Validity of day in constrained date.",
+            "name": "day_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        },
+        {
+            "meaning": "Validity of minute in constrained time.",
+            "name": "minute_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        },
+        {
+            "meaning": "Validity of second in constrained time.",
+            "name": "second_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        },
+        {
+            "meaning": "Validity of millisecond in constrained time.",
+            "name": "millisecond_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        },
+        {
+            "meaning": "Validity of timezone in constrained date/time.",
+            "name": "timezone_validity",
+            "parameters": [],
+            "return_type": "VALIDITY_KIND"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_TEMPORAL"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on instances representing date/times, i.e. instants in time.",
+        "name": "C_DATE_TIME"
+    }
+}

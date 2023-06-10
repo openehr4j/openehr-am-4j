@@ -1,0 +1,50 @@
+{
+    "attributes": [
+        {
+            "description": "Default value set in a template, and present in an operational template. Generally limited to leaf and near-leaf nodes.",
+            "multiplicity": "0..1",
+            "name": "default_value",
+            "type": "Any"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if any value (i.e. instance) of the reference model type would be allowed. Redefined in descendants.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if `_a_value_` is valid with respect to constraint expressed in concrete instance of this type.",
+            "name": "valid_value",
+            "parameters": [
+                {
+                    "name": "a_value",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Generate a prototype value from this constraint object.",
+            "name": "prototype_value",
+            "parameters": [],
+            "return_type": "Any"
+        },
+        {
+            "meaning": "True if there is an assumed value.",
+            "name": "has_default_value",
+            "parameters": [],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "C_OBJECT"
+        ],
+        "classifier": "Class",
+        "description": "Abstract parent type of `C_OBJECT` subtypes that are defined by value, i.e. whose definitions are actually in the archetype rather than being by reference.",
+        "name": "C_DEFINED_OBJECT"
+    }
+}

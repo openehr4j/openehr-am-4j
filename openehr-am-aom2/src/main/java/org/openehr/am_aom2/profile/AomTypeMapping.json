@@ -1,0 +1,30 @@
+{
+    "attributes": [
+        {
+            "description": "Name of the AOM type being mapped to an RM type.",
+            "multiplicity": "1..1",
+            "name": "source_class_name",
+            "type": "String"
+        },
+        {
+            "description": "Name of the RM type in the mapping.",
+            "multiplicity": "1..1",
+            "name": "target_class_name",
+            "type": "String"
+        },
+        {
+            "description": "List of mappings of properties of this type to another type.",
+            "multiplicity": "0..1",
+            "name": "property_mappings",
+            "type": "Hash"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": null,
+        "classifier": "Class",
+        "description": "Data object expressing a mapping between two types.",
+        "name": "AOM_TYPE_MAPPING"
+    }
+}

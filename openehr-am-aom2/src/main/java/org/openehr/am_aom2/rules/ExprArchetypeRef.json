@@ -1,0 +1,26 @@
+{
+    "attributes": [
+        {
+            "description": "The path to the archetype node.",
+            "multiplicity": "1..1",
+            "name": "path",
+            "type": "String"
+        },
+        {
+            "description": "",
+            "multiplicity": "1..1",
+            "name": "item",
+            "type": "ARCHETYPE_CONSTRAINT"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "EXPR_VALUE_REF"
+        ],
+        "classifier": "Class",
+        "description": "Expression tree leaf item representing a reference to a value found in data at a location specified by a path in the archetype definition.",
+        "name": "EXPR_ARCHETYPE_REF"
+    }
+}

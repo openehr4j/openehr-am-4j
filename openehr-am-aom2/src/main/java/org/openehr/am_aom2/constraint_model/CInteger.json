@@ -1,0 +1,32 @@
+{
+    "attributes": [
+        {
+            "description": "Formal constraint on `Integer`, in the form of one or more `Interval<Integer>`.",
+            "multiplicity": null,
+            "name": "constraint",
+            "type": "List"
+        },
+        {
+            "description": "Default value set in a template, and present in an operational template. Generally limited to leaf and near-leaf nodes.",
+            "multiplicity": null,
+            "name": "default_value",
+            "type": "Integer"
+        },
+        {
+            "description": "Value to be assumed if none sent in data.",
+            "multiplicity": null,
+            "name": "assumed_value",
+            "type": "Real"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_types": [
+            "C_ORDERED"
+        ],
+        "classifier": "Class",
+        "description": "Constraint on instances of Integer.",
+        "name": "C_INTEGER"
+    }
+}

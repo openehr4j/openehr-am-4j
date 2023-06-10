@@ -1,0 +1,145 @@
+{
+    "attributes": [
+        {
+            "description": "Root node of the definition of this archetype.",
+            "multiplicity": "1..1",
+            "name": "definition",
+            "type": "C_COMPLEX_OBJECT"
+        },
+        {
+            "description": "The ontology of the archetype.",
+            "multiplicity": "1..1",
+            "name": "ontology",
+            "type": "ARCHETYPE_ONTOLOGY"
+        },
+        {
+            "description": "ADL version if archetype was read in from an ADL sharable archetype.",
+            "multiplicity": "0..1",
+            "name": "adl_version",
+            "type": "String"
+        },
+        {
+            "description": "Multi-axial identifier of this archetype in archetype space.",
+            "multiplicity": "1..1",
+            "name": "archetype_id",
+            "type": "ARCHETYPE_ID"
+        },
+        {
+            "description": "The normative meaning of the archetype as a whole, expressed as a local archetype code, typically \u201cat0000\u201d.",
+            "multiplicity": "1..1",
+            "name": "concept",
+            "type": "String"
+        },
+        {
+            "description": "Identifier of the specialisation parent of this archetype.",
+            "multiplicity": "0..1",
+            "name": "parent_archetype_id",
+            "type": "ARCHETYPE_ID"
+        },
+        {
+            "description": "Invariant statements about this object. Statements are expressed in first order predicate logic, and usually refer to at least two attributes.",
+            "multiplicity": "0..1",
+            "name": "invariants",
+            "type": "List"
+        },
+        {
+            "description": "OID identifier of this archetype.",
+            "multiplicity": "0..1",
+            "name": "uid",
+            "type": "HIER_OBJECT_ID"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "The concept name of the archetype in language a_lang; corresponds to the term definition of the concept attribute in the archetype ontology.",
+            "name": "concept_name",
+            "parameters": [
+                {
+                    "name": "a_lang",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "String"
+        },
+        {
+            "meaning": "Set of language-independent paths extracted from archetype. Paths obey Xpath-like syntax and are formed from alternations of C_OBJECT.node_id and C_ATTRIBUTE.rm_attribute_name values.",
+            "name": "physical_paths",
+            "parameters": [],
+            "return_type": "List"
+        },
+        {
+            "meaning": "Set of language-dependent paths extracted from archetype. Paths obey the same syntax as physical_paths, but with node_ids replaced by their meanings from the ontology.",
+            "name": "logical_paths",
+            "parameters": [
+                {
+                    "name": "lang",
+                    "type": "Object"
+                }
+            ],
+            "return_type": "List"
+        },
+        {
+            "meaning": "Specialisation depth of this archetype; larger than 0 if this archetype has a parent. Derived from terminology.specialisation_depth.",
+            "name": "specialisation_depth",
+            "parameters": [],
+            "return_type": "Integer"
+        },
+        {
+            "meaning": "True if this archetype is a specialisation of another.",
+            "name": "is_specialised",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if the archetype is valid overall; various tests should be used, including checks on node_ids, internal references, and constraint references.",
+            "name": "is_valid",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if every node_id found on a C_OBJECT node is found in ontology.term_codes.",
+            "name": "node_ids_valid",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Version of predecessor archetype of this archetype, if any.",
+            "name": "previous_version",
+            "parameters": [],
+            "return_type": "String"
+        },
+        {
+            "meaning": "True if every ARCHETYPE_INTERNAL_REF. target_path refers to a legitimate node in the archetype definition.",
+            "name": "internal_references_valid",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True if every CONSTRAINT_REF.reference found on a C_OBJECT node in the archetype definition is found in ontology.constraint_codes.",
+            "name": "constraint_references_valid",
+            "parameters": [],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "The short concept name of the archetype extracted from the archetype_id.",
+            "name": "short_concept_name",
+            "parameters": [],
+            "return_type": "String"
+        },
+        {
+            "meaning": "",
+            "name": "version",
+            "parameters": [],
+            "return_type": "String"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "AUTHORED_RESOURCE"
+        ],
+        "classifier": "Class",
+        "description": "Archetype equivalent to ARCHETYPED class in Common reference model. Defines semantics of identfication, lifecycle, versioning, composition and specialisation.",
+        "name": "ARCHETYPE"
+    }
+}

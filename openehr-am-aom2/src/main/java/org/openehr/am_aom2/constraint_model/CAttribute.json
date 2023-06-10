@@ -1,0 +1,39 @@
+{
+    "attributes": [
+        {
+            "description": "Reference model attribute within the enclosing type represented by a C_OBJECT.",
+            "multiplicity": "1..1",
+            "name": "rm_attribute_name",
+            "type": "String"
+        },
+        {
+            "description": "Constraint on every attribute, regardless of whether it is singular or of a container type, which indicates whether its target object exists or not (i.e. is mandatory or not).",
+            "multiplicity": "1..1",
+            "name": "existence",
+            "type": "Interval<Integer>"
+        },
+        {
+            "description": "Child C_OBJECT nodes. Each such node represents a constraint on the type of this attribute in its reference model. Multiples occur both for multiple items in the case of container attributes, and alternatives in the case of singular attributes.",
+            "multiplicity": "0..1",
+            "name": "children",
+            "type": "List"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if any value (i.e. instance) of the reference model attribute represented by this C_ATTIRBUTE is allowed.",
+            "name": "any_allowed",
+            "parameters": [],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_types": [
+            "ARCHETYPE_CONSTRAINT"
+        ],
+        "classifier": "Class",
+        "description": "Abstract model of constraint on any kind of attribute node.",
+        "name": "C_ATTRIBUTE"
+    }
+}
