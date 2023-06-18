@@ -1,6 +1,6 @@
 # openehr-am-j3x [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
-This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the respective specification of the openEHR Reference Model component.
+This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the respective specification of the openEHR Archetype Model component.
 
 ## Dependencies
 
