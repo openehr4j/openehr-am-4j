@@ -1,4 +1,4 @@
-# openehr-am-java
+# openehr-am-4j
 
 ## References
 
