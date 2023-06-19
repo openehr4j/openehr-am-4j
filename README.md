@@ -8,7 +8,7 @@ This repository contains the source code for Maven packages with Java interface 
 
 ## Usage
 
-The "openehr-am-j3x" packages are published to [GitHub Packages](https://github.com/features/packages).
+The "openehr-am-4j" packages are published to [GitHub Packages](https://github.com/features/packages).
 So, even though they are publicly available, projects that want to apply those packages need a GitHub access token with the "read:packages" scope.
 How to create such an access token is described here: [docs.github.com](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
@@ -16,7 +16,7 @@ How to create such an access token is described here: [docs.github.com](https://
 
 ### Maven
 
-For projects that use Maven as build management tool, the personal GitHub access token and "openehr-am-j3x" GitHub package repository should be added to the global Maven settings.
+For projects that use Maven as build management tool, the personal GitHub access token and "openehr-am-4j" GitHub package repository should be added to the global Maven settings.
 
 <details>
   <summary><code>~/.m2/settings.xml</code></summary>
@@ -40,7 +40,7 @@ For projects that use Maven as build management tool, the personal GitHub access
         </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/openehr-java-api/openehr-am-j3x</url>
+          <url>https://maven.pkg.github.com/openehr-java-api/openehr-am-4j</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -73,7 +73,7 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.am.version>TBD</openehr.rm.version>
+        <openehr.am.version>TBD</openehr.am.version>
     </properties>
 
     <dependencies>
@@ -113,7 +113,7 @@ After the registration of the GitHub Maven repository, the dependency on the req
 ```groovy
 repositories {
     maven {
-        url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-am-j3x')
+        url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-am-4j')
         credentials {
             username = project.findProperty('gpr.user')
             password = project.findProperty('gpr.key')
@@ -136,7 +136,7 @@ dependencies {
 
 ### Version number scheme
 
-The "openehr-am-j3x" package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a package-specific suffix. Those two parts are separated by the first hyphen.
+The "openehr-am-4j" package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a package-specific suffix. Those two parts are separated by the first hyphen.
 
 The suffix has four different types:
 

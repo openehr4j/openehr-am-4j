@@ -1,8 +1,8 @@
 publishing {
   publications {
     mavenJava(MavenPublication) {
-      groupId = 'com.experimental-software.java-api'
-      artifactId = 'openehr-am-aom2'
+      groupId = 'com.experimental-software.am'
+      artifactId = 'aom2-api'
 
       from components.java
     }
@@ -11,7 +11,7 @@ publishing {
   repositories {
     maven {
       name = 'GitHubPackages'
-      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-am-java'
+      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-am-4j'
       credentials {
         username = System.getenv('GITHUB_ACTOR')
         password = System.getenv('GITHUB_TOKEN')
@@ -21,8 +21,7 @@ publishing {
 }
 
 dependencies {
-  api 'com.experimental-software.java-api:openehr-base-resource-model:1.2.0-alpha-2'
-  api 'com.experimental-software.java-api:openehr-base-foundation-types:1.2.0-alpha-2'
-  api 'com.experimental-software.java-api:openehr-base-base-types:1.2.0-alpha-2'
+  api 'com.experimental-software.base:resource-model-api:1.2.0-alpha-7'
+  api 'com.experimental-software.base:foundation-types-api:1.2.0-alpha-7'
+  api 'com.experimental-software.base:base-types-api:1.2.0-alpha-7'
 }
-
