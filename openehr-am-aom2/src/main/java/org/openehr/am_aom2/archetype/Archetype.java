@@ -7,6 +7,7 @@ import java.util.List;
 import org.openehr.am_aom2.constraint_model.CComplexObject;
 import org.openehr.base_base_types.identification.ArchetypeId;
 import org.openehr.base_base_types.identification.HierObjectId;
+import org.openehr.base_base_types.identification.Uuid;
 import org.openehr.base_foundation_types.primitive_types.Integer;
 import org.openehr.base_resource_model.resource.AuthoredResource;
 
@@ -52,7 +53,8 @@ public interface Archetype extends AuthoredResource {
   /**
    * OID identifier of this archetype.
    */
-  HierObjectId getUid();
+  // HierObjectId getUid(); FIXME Return type was changed from HierObjectId to Uuid to work around conflict with org.openehr.base_resource_model.resource.AuthoredResource.getUid
+  Uuid getUid();
 
   /**
    * The concept name of the archetype in language a_lang; corresponds to the term definition of the concept attribute in the archetype ontology.

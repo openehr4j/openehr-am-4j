@@ -3,6 +3,7 @@ package org.openehr.am_aom2.archetype;
 import java.lang.Boolean;
 import java.lang.String;
 import java.util.Map;
+
 import org.openehr.base_base_types.identification.Uuid;
 import org.openehr.base_resource_model.resource.AuthoredResource;
 
