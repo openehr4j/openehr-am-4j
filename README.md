@@ -73,7 +73,7 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.am.version>TBD</openehr.am.version>
+        <openehr.am.version>2.2.0-alpha-8</openehr.am.version>
     </properties>
 
     <dependencies>
@@ -121,7 +121,7 @@ repositories {
     }
 }
 
-ext['openehrAmVersion'] = 'TBD'
+ext['openehrAmVersion'] = '2.2.0-alpha-8'
 
 dependencies {
     TBD
