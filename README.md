@@ -60,7 +60,7 @@ For projects that use Maven as build management tool, the personal GitHub access
 
 </details> 
 
-Then the dependencies to the "openehr-rm-java" packages can be declared inside the Project Object Model.
+Then the dependencies to the "openehr-am-4j" packages can be declared inside the Project Object Model.
 
 <details>
   <summary><code>/path/to/project/pom.xml</code></summary>
@@ -77,7 +77,11 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
     </properties>
 
     <dependencies>
-
+      <dependency>
+          <groupId>com.experimental-software.am</groupId>
+          <artifactId>aom2-api</artifactId>
+          <version>${openehr.am.version}</version>
+      </dependency>
     </dependencies>
 
 </project>
@@ -124,7 +128,7 @@ repositories {
 ext['openehrAmVersion'] = '2.2.0-alpha-8'
 
 dependencies {
-    TBD
+    implementation "com.experimental-software.am:aom2-api:${openehrAmVersion}"
 }
 ```
 
