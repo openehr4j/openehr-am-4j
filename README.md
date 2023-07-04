@@ -14,8 +14,6 @@ How to create such an access token is described here: [docs.github.com](https://
 
 ### Maven
 
-### Maven
-
 For projects that use Maven as build management tool, the personal GitHub access token and "openehr-am-4j" GitHub package repository should be added to the global Maven settings.
 
 <details>
