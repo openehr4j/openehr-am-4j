@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "gradle"
-    directory: "/"
+    directory: "/openehr-am-aom2"
     schedule:
       interval: "daily"
