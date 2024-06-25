@@ -1,6 +1,6 @@
-org.openehr.am_aom2.archetype
-org.openehr.am_aom2.constraint_model
-org.openehr.am_aom2.profile
-org.openehr.am_aom2.rm_overlay
-org.openehr.am_aom2.rules
-org.openehr.am_aom2.terminology
+org.openehr.am.aom2.archetype
+org.openehr.am.aom2.constraint_model
+org.openehr.am.aom2.profile
+org.openehr.am.aom2.rm_overlay
+org.openehr.am.aom2.rules
+org.openehr.am.aom2.terminology
