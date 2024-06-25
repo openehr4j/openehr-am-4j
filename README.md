@@ -71,7 +71,7 @@ Then the dependencies to the "openehr-am-4j" packages can be declared inside the
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.am.version>2.2.0-alpha-9</openehr.am.version>
+        <openehr.am.version>2.2.0-alpha-10</openehr.am.version>
     </properties>
 
     <dependencies>
@@ -123,7 +123,7 @@ repositories {
     }
 }
 
-ext['openehrAmVersion'] = '2.2.0-alpha-9'
+ext['openehrAmVersion'] = '2.2.0-alpha-10'
 
 dependencies {
     implementation "com.experimental-software.am:aom2-api:${openehrAmVersion}"
